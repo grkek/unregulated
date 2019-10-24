@@ -19,7 +19,7 @@ cd unregulated
 # Create a new environment
 python3 -m venv env
 # Activate the environment
-source /env/bin/activate
+source env/bin/activate
 # Install the Ultra JSON library
 pip install ujson
 cd ..
