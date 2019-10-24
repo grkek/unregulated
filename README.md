@@ -28,6 +28,7 @@ git clone https://github.com/Rapptz/discord.py
 cd discord.py
 # Install the discord.py library
 pip install -U
+cd ..
 cd unregulated
 # Create the necessary directory for logging
 mkdir logs
