@@ -30,8 +30,6 @@ cd discord.py
 pip install -U .
 cd ..
 cd unregulated
-# Create the necessary directory for logging
-mkdir logs
 ```
 
 ## Usage
@@ -59,7 +57,7 @@ Keep in mind that all of the special characters are replaced by an empty space, 
 You can run this script by:
 
 ```bash
-python app.py
+python src/app.py
 ```
 
 **Data collection**
@@ -67,29 +65,3 @@ python app.py
 The data which will consist of user details and the message will be stored in a server specific folder as a JSON file named after the channel it was received in.
 
 The files are stored in the `/messages/` directory.
-
-## License
-
-```
-MIT License
-
-Copyright (c) 2019 Giorgi Kavrelishvili
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```

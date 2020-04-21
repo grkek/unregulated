@@ -32,7 +32,6 @@ Attributes:
 
 """
 import datetime
-import logging
 import os
 import re
 import sys
@@ -45,8 +44,6 @@ from discord.ext import commands
 from config import configuration
 
 base_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-
-logging.basicConfig(filename=f'{base_dir}/logs/{datetime.datetime.now()}.log',level=logging.ERROR)
 
 bot = commands.AutoShardedBot(command_prefix='', self_bot=True)
 
@@ -164,7 +161,7 @@ def main():
         None
 
     Raises:
-        Every exception which occurs in the discord.py library.
+        LoginFailure: If an improper token has been passed to the bot.
 
     """
     try:
